@@ -1,0 +1,65 @@
+%ELIMINACION GAUSSIANA
+>> A=[10 -7 0;-3 2 6;5 -1 5]
+
+A =
+
+    10    -7     0
+    -3     2     6
+     5    -1     5
+
+>> b=[7 4 6]
+
+b =
+
+     7     4     6
+
+>> b=b' %quiero q sea columna
+
+b =
+
+     7
+     4
+     6
+
+>> x=Gauss(A,b)
+
+x =
+
+    0.0000
+   -1.0000
+    1.0000
+
+>>  %parace que es la solucion exacta pero los ceros despues de la coma me indican que no es exacta, hay numeros
+>> format long x
+Error using format
+Unrecognized command option long.
+ 
+>> format long
+>> x
+
+x =
+
+   0.000000000000000
+  -1.000000000000000
+   1.000000000000000
+
+>> %sigue sin apareces los numeros, pero puedo tomarlo como exacto y almacenarlo en otra varible q sea exacta
+>> exat=[0 -1 1]'
+
+exat =
+
+     0
+    -1
+     1
+
+>> x==exat
+
+ans =
+
+  3×1 logical array
+
+   0
+   0
+   0
+
+>> %probe si era exacta y no lo es, hay un error de redondeo pero en una sifra significativa muy chiquita

@@ -1,0 +1,3 @@
+>> load var.mat
+>> subplot(2,1,1), plot(x, f(x), 'm'), grid on
+>> subplot(2,1,2), plot(x, g(x), 'r'), grid on

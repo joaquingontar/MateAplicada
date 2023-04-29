@@ -1,0 +1,5 @@
+>> load('fun_ej7.mat')
+>> %EJERCICIO 7
+>> % en el apartado a nos piden plotear las 4 funciones en una misma grafica
+>> x= -3:.05:3;
+>> plot(x,f1(x),'g',x,f2(x),'m',x,f3(x),'b',x,f4(x),'g'),grid on

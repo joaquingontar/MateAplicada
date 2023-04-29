@@ -1,0 +1,10 @@
+>> % defino el polinomio con su vector coeficientes
+>> pol=[1 0 0 3 0 -2];
+>> x=0:.005:2;
+>> % con polyval puedo evaluar el polinomio con un valor
+>> p=polyval(pol,x);
+>> plot(x,p)
+>> % en el item b...
+>> v=0:.5:2;
+>> f=@(x) x.^5+3*x.^3-2;
+>> plot(x,p,'r', v, f(v),'b+'),grid on

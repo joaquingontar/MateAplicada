@@ -1,0 +1,26 @@
+>> x=[-1,0,1];
+>> multi(f1,f2,x);
+     0     0     2
+
+>> %en el item b debo calcular el producto de las funciones f1 y f2 del ej 7 evaluadas en el vector x
+>> f1=@(x)x^3-x-1
+
+f1 =
+
+  function_handle with value:
+
+    @(x)x^3-x-1
+
+>> f2=@(x) e^(-x)-x;
+>> %ahora calculo
+>> multi(f1,f2,x);
+Undefined function or variable 'e'.
+
+Error in @(x)e^(-x)-x
+
+Error in multi (line 7)
+    res(i)= f1(v(i)) * f2(v(i));
+ 
+>> f2=@(x) exp(-x)-x;
+>> multi(f1,f2,x);
+   -3.7183   -1.0000    0.6321

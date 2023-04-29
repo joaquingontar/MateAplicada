@@ -1,0 +1,36 @@
+>> A
+
+A =
+
+    10    -7     0
+    -3     2     6
+     5    -1     5
+
+ 
+Did you mean:
+>> [L U P]=lu(A)
+
+L =
+
+   1.000000000000000                   0                   0
+   0.500000000000000   1.000000000000000                   0
+  -0.300000000000000  -0.040000000000000   1.000000000000000
+
+
+U =
+
+  10.000000000000000  -7.000000000000000                   0
+                   0   2.500000000000000   5.000000000000000
+                   0                   0   6.200000000000001
+
+
+P =
+
+     1     0     0
+     0     0     1
+     0     1     0
+
+>> % L: matriz triang inf unitaria, tiene el producto de los multiplicadores
+>> % U: matriz triangular superior
+>> %P: matriz de permutacion, se permuto la segunda fila con la tercera 
+>> %lu: es una funcion intrinseca
